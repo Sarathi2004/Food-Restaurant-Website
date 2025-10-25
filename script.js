@@ -24,7 +24,7 @@ function sendWhatsapp() {
     // Get values
     let name = document.getElementById('name').value;
     let phone = document.getElementById('phone').value;
-    let order = document.getElementById('order').value;
+    let orders = document.getElementById('orders').value;
     let food = document.getElementById('food').value;
     let quantity = document.getElementById('quantity').value;
     let date = document.getElementById('date').value;
@@ -35,7 +35,7 @@ function sendWhatsapp() {
     var url = "https://wa.me/" + number + "?text="
             + "Name: " + name + "%0a"
             + "Mobile No: " + phone + "%0a"
-            + "Order Item: " + order + "%0a"
+            + "Order Item: " + orders + "%0a"
             + "Additional Food: " + food + "%0a"
             + "Food Quantity: " + quantity + "%0a"
             + "Date and Time: " + date + "%0a"
@@ -49,4 +49,5 @@ function sendWhatsapp() {
 
 function submit(){
     alert("Your Message Was Sending Successfully, Thank You...!");
+
 }
